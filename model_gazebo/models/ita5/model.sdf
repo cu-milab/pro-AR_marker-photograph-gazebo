@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name="ita5">
+  <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://test/meshes/ita5.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+          <mesh>
+            <uri>model://ita5/meshes/ita5.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    </model>
+  </sdf>

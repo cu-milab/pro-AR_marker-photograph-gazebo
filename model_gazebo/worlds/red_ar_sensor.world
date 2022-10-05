@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <scene>
+      <ambient>0.7 0.7 0.7 1</ambient>
+      <!--<background>0.1 0.1 0.1 1</background>-->
+    </scene>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    
+
+
+    <include>
+      <uri>model://sensor_stand_ar</uri>
+      <static>true</static>
+    </include>
+
+    <include>
+      <uri>model://ita5</uri>
+      <pose frame=''>2 0 0 0 0 0</pose>
+    </include>
+
+
+    <light name='point_light_0' type='point'>
+      <pose frame=''>0 1 1 0 0 0</pose>
+    </light>
+
+    <light name='point_light_1' type='point'>
+      <pose frame=''>0 1 0.5 0 0 0</pose>
+    </light>
+
+    <light name='point_light_2' type='point'>
+      <pose frame=''>-1 0 1 0 0 0</pose>
+    </light>
+
+    <light name='point_light_3' type='point'>
+      <pose frame=''>-1 0 0.5 0 0 0</pose>
+    </light>
+
+    <light name='point_light_4' type='point'>
+      <pose frame=''>0 -1 1 0 0 0</pose>
+    </light>
+
+    <light name='point_light_5' type='point'>
+      <pose frame=''>0 -1 0.5 0 0 0</pose>
+    </light>
+  </world>
+</sdf>

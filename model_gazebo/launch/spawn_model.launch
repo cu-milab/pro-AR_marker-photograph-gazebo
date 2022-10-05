@@ -1,0 +1,6 @@
+<launch>
+  <env name="GAZEBO_MODEL_PATH" value="$(find model_gazebo)/models:$(optenv GAZEBO_MODEL_PATH)" />
+
+  <node name="sdf_spawn" pkg="gazebo_ros" type="spawn_model"
+    args="-sdf -file $(find model_gazebo)/models/sensor_stand/model.sdf -model sensor_stand"/>
+</launch>
